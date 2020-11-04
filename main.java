@@ -98,9 +98,11 @@ public static void main(String[] args) {
 			method f=new method();
 			float distan=(float)f.Dijkstra(Ma,pa,n,f.exam(nam,start,n), f.exam(nam,dest,n));//调用迪杰斯特拉算法查出此结点到其他点最短路径
 			int s, d;
+			//调用方法检测
 			s=f.exam(nam,start,n);
 			d=f.exam(nam,dest,n);
 			System.out.print("最佳乘地铁路线：");
+			//调用方法输出
 			f.print(pa,nam,s,d);
 			System.out.print("——>"+dest);
 		}

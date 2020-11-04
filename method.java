@@ -38,6 +38,7 @@ public class method {
 		result=dist[d];
 		return result;
 	}
+	//判断站点是否存在
 	public int exam(String name[],String nam,int n) {
 		int i=0;
 		while (i<n&&!name[i].equals(nam)) {
@@ -48,20 +49,20 @@ public class method {
 	//输出站点
 	public void print(int pa[],String nam[],int d,int i)
 	{
-		if (pa[i]>=0) {
+		if (pa[i]>=0) { 
 			print(pa,nam,d,pa[i]);
-			System.out.print("——>" +nam[pa[i]]);	
+			System.out.print("——>" +nam[pa[i]]); //输出的格式
 		}
 	}
-	//判断是否是其中的节点
+	//判断站点是否存在
 	public static boolean exist(String name[],String nam,int n) {
 		int i=0;
 		while (i<n) {
-			if (name[i]!=null&&name[i].equals(nam)) {
+			if (name[i]!=null&&name[i].equals(nam)) { //判断站点存在其中，则返回true
 				return true;
 			}
 			i++;
 		}
 		return false;
-	} 
+	}
 }
